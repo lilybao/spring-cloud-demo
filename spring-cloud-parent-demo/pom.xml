@@ -16,6 +16,9 @@
         <module>eureka-zuul</module>
         <module>config-server</module>
         <module>config-client</module>
+        <module>service-client1</module>
+        <module>service-client2</module>
+        <module>service-hystrix</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

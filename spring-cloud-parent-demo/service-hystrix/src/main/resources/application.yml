@@ -1,0 +1,17 @@
+server:
+  port: 8282
+spring:
+  application:
+    name: service-hystrix
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
