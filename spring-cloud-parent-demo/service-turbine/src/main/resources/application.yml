@@ -1,0 +1,26 @@
+server:
+  port: 8283
+
+spring:
+  application:
+    name: service-turbine
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
+
+turbine:
+  app-config: service-hystrix,eureka-ribbon
+  combine-host-port: true
+  instance-url-suffix:
+    default: /actuator/hystrix.stream

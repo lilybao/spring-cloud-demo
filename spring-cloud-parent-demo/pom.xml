@@ -19,6 +19,7 @@
         <module>service-client1</module>
         <module>service-client2</module>
         <module>service-hystrix</module>
+        <module>service-turbine</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
