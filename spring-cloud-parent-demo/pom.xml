@@ -20,6 +20,7 @@
         <module>service-client2</module>
         <module>service-hystrix</module>
         <module>service-turbine</module>
+        <module>service-gateway</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
