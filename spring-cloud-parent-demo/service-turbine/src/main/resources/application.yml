@@ -19,8 +19,10 @@ management:
         allowed-origins: "*"
         allowed-methods: "*"
 
+
 turbine:
   app-config: service-hystrix,eureka-ribbon
+  aggregator:
+    cluster-config: default
   combine-host-port: true
-  instance-url-suffix:
-    default: /actuator/hystrix.stream
+  cluster-name-expression: new String("default")
